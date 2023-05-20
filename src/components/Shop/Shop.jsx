@@ -23,13 +23,13 @@ const Shop = () => {
     // const itemsPerPage = 10;
     const totalPages = Math.ceil(totalProducts / itemsPerPage);
 
-    // const pageNumbers = [];
-    // for(let i=1; i<= totalPages; i++){
-    //     pageNumbers.push(i);
-    // }
+    const pageNumbers = [];
+    for(let i=1; i<= totalPages; i++){
+        pageNumbers.push(i);
+    }
     // Alternative::
 
-    const pageNumbers = [...Array(totalPages).keys()];
+    // const pageNumbers = [...Array(totalPages).keys()];
 
     console.log(totalProducts);
     // useEffect(() => {
